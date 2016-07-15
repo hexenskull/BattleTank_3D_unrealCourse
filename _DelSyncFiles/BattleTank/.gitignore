@@ -41,6 +41,8 @@ Content/StarterContent/*
 *.opensdf
 *.sdf
 *.VC.opendb
+#my add
+*.VC.db
 
 # Precompiled Assets
 SourceArt/**/*.png
