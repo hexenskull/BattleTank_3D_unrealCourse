@@ -1,7 +1,5 @@
 ###MY added
 Content/StarterContent/*
-../.com.greenworldsoft.syncfolderspro
-../_DelSyncFiles/*
 
 # Visual Studio 2015 user specific files
 .vs/
@@ -43,8 +41,6 @@ Content/StarterContent/*
 *.opensdf
 *.sdf
 *.VC.opendb
-#my add
-*.VC.db
 
 # Precompiled Assets
 SourceArt/**/*.png
