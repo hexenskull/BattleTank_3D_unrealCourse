@@ -24,7 +24,7 @@ void ATankPlayerController::BeginPlay()
 void ATankPlayerController::Tick( float DeltaTime )
 {
 	Super::Tick(DeltaTime);
-	AimTowardsCrosshair();
+	//AimTowardsCrosshair();
 }
 
 ATank* ATankPlayerController::GetControlledTank() const
@@ -39,7 +39,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	FVector HitLocation; //Out parameter
 	if (GetSightRayHitLocation(HitLocation))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString())
+		GetControlledTank()->AimAt(HitLocation);
 		//TODO tell controlled tank to aim at this point 
 	}
 }
@@ -86,7 +86,7 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 		ECollisionChannel::ECC_Visibility) // Hit anything what is visible
 		)
 	{
-		HitLocation = HitResult.Location;
+		HitLocation = HitResult.Location; //here we change our HitLocation to HitResult.Location
 		return true;
 	}
 	HitLocation = FVector(0);
