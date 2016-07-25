@@ -2,6 +2,7 @@
 Content/StarterContent/*
 ../.com.greenworldsoft.syncfolderspro
 ../_DelSyncFiles/*
+../.DS_Store
 
 # Visual Studio 2015 user specific files
 .vs/

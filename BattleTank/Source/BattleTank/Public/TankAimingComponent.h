@@ -6,9 +6,9 @@
 #include "TankAimingComponent.generated.h"
 
 //forward declaration
-class UTankBarrel; //without #include "TankBarrel.h"!!!! how it works?
-					//ok so it just to make the C++ compiler happy!!!)) without making a chain of #includes!
+class UTankBarrel;
 
+// Hold barrel's properties and Elavate method
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BATTLETANK_API UTankAimingComponent : public UActorComponent
 {
